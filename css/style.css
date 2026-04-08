@@ -864,7 +864,7 @@ a { text-decoration: none; color: inherit; }
 .hero-inner {
   max-width: 860px;
   margin: 0 auto;
-  padding: 56px 48px 0;
+  padding: 50px 48px 0;
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 40px;
@@ -892,8 +892,8 @@ a { text-decoration: none; color: inherit; }
 }
 
 .hero-photo {
-  width: 260px;
-  height: 340px;
+  width: 234px;
+  height: 306px;
   border-radius: 6px 6px 0 0;
   overflow: hidden;
   flex-shrink: 0;
