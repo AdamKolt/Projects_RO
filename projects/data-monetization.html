@@ -74,6 +74,15 @@
         </div>
       </div>
 
+      <br>
+      <div style="margin-top:20px;margin-bottom:20px;">
+        <p style="margin:0;font-size:13px;line-height:1.7;font-style:italic;">
+          Led end-to-end development of Ooredoo's first data monetization product from business case and regulatory
+          clearance through API design, engineering delivery, and commercial launch, generating $100K in first-month
+          revenue, exceeding forecast by 35%.
+        </p>
+      </div>
+
       <!-- CALLOUTS -->
       <div class="callout gold" style="margin-top:20px;">
         <div class="callout-bar"></div>
@@ -87,27 +96,21 @@
       <div class="callout red">
         <div class="callout-bar"></div>
         <div class="callout-body">
-          <strong>Problem:</strong> SMBs sector exhibit low adoption of Bulk SMS service due to lack of customer contact
-          and demographics data, forcing them to outsource marketing campaigns, resulting in missed revenue opportunity
-          for Ooredoo.
+          <strong>Problem:</strong> Ooredoo sits on a vast untapped strategic asset of consumer datasets. In the
+          meanwhile SMBs were churning off Bulk SMS service due to lack of customer data to run targeted campaigns,
+          resulting in missed revenue opportunity for Ooredoo.
         </div>
       </div>
 
       <div class="callout navy">
         <div class="callout-bar"></div>
         <div class="callout-body">
-          <strong>Proposition:</strong> Unlock a new revenue stream leveraging the company's vast customer data in an
-          anonymized manner to create <strong>Marketing Campaigns as a Service</strong> platform, allowing SMB segment
-          to launch demographics and location based SMS and WhatsApp marketing campaigns without compromising our
-          customers privacy.
+          <strong>Proposition:</strong> Unlock new revenue streams bridging both problems, by building a self-serve
+          <strong>Marketing Campaigns as a Service</strong> platform
+          allowing SMBs to launch demographic and location-based SMS and WhatsApp campaigns, powered by Ooredoo's
+          anonymized customer data without compromising subscriber privacy.
         </div>
       </div>
-
-      <p class="intro">
-        Conceptualized, developed, and launched <strong>Marketing Campaign as a Service</strong> (MCaaS)—the company's
-        first data/API monetization platform—while successfully navigating complex consumer data privacy laws and
-        regulations.
-      </p>
 
       <!-- BULLET LIST -->
       <div class="bullet-list">
@@ -115,32 +118,44 @@
           <div class="bullet-dot"></div>
           <div><strong>Business Case:</strong> Developed a Business Case based on market analysis, cost of opportunity,
             regulatory constraints, MVP and sales forecast. Secured executive buy-in and approval to allocate resources.
-            I implemented a pay-per-message model with a premium for advanced targeting capabilities, directly aligning
+            Designed a pay-per-message model with a premium for advanced targeting capabilities, directly aligning
             the pricing with the value proposition.</div>
         </div>
+
         <div class="bullet-item">
           <div class="bullet-dot"></div>
-          <div><strong>Regulatory and Privacy Clearance:</strong> Worked with Regulatory and Legal teams to analyze
-            privacy laws and define way forward options. Presented compliance options' pros and cons to executives
-            demonstrating adherence to all relevant regulations, which culminated in formal approval to proceed, setting
-            a precedent for future data monetization products.</div>
+          <div><strong>Regulatory and Privacy Clearance:</strong> This was the make-or-break risk for the product.
+            I led the analysis with Legal and Regulatory teams, mapped out compliance options with their trade-offs, and
+            presented a recommended path to executives, securing formal approval that set a precedent for all future
+            data monetization initiatives at Ooredoo.</div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-dot"></div>
+          <div><strong>Building Consent Infrastructure:</strong> Designed and drove implementation of consent capture
+            across high-traffic touchpoints including service order forms, retail digital signing screens, and
+            broad-scale communication campaign for existing subscribers, alongside new opt-out controls in the consumer
+            mobile app. </div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-dot"></div>
+          <div><strong>API Design:</strong> Defined the audience query layer as a parameterized API, giving the product
+            the flexibility to support new targeting dimensions without re-engineering the core flow. Defined data
+            contracts, filtering logic and error handling for APIs. </div>
         </div>
         <div class="bullet-item">
           <div class="bullet-dot"></div>
-          <div><strong>Consent in Touch-Points:</strong> Led the effort to embed legal consent language directly into
-            high-traffic customer touchpoints, including all service order forms, digital ordering and electronic
-            signing screens in retail shops. Additionally, I designed and executed a broad-scale communication campaign
-            to establish implied consent for existing subscribers, complemented by updating the data privacy controls
-            within the consumer mobile application to allow for opting out.</div>
+          <div><strong>Privacy Constraints Design:</strong> Defined backend logic to protect the privacy of consumers
+            including guardrails for consent-flag filtering, preventing demographics disclosure and reverse-engineering,
+            and frequency capping at the subscriber level with automatic audience redistribution to protect subscriber
+            experience. </div>
         </div>
-        <div class="bullet-item">
-          <div class="bullet-dot"></div>
-          <div><strong>Solution Design:</strong> Crafted low fidelity wireframes with optimal user flows designed around
-            five steps: 1) selecting campaign audience, 2) writing a message, 3) selecting channel (SMS/WhatsApp), 4)
-            pay for the campaign, and finally 5) launch the campaign. Shared the designs with the UX/UI team to build
-            high fidelity prototypes and accelerate development.</div>
-        </div>
+
+
       </div>
+
+
 
       <!-- TWO COL -->
       <div class="two-col">
@@ -148,16 +163,20 @@
           <div class="bullet-list">
             <div class="bullet-item">
               <div class="bullet-dot"></div>
-              <div><strong>Core Systems APIs:</strong> Worked with technical teams to develop integration with SMB
-                customers CRM, consumer data warehouse, Bulk SMS Gateway, Azure Communication Service for WhatsApp
-                integration, and payment gateway. This involved defining clear APIs and data transfer contracts.</div>
+              <div><strong>Solution Design:</strong> The underlying system required integrating five platforms (CRM,
+                data
+                warehouse, Bulk SMS gateway, Azure Communications for WhatsApp, and payment gateway). I designed
+                low-fidelity wireframes that abstracted all of into a clean five-step flow: select audience → write
+                message → choose channel → pay → launch.</div>
             </div>
           </div>
+          <br>
           <div class="spend-note">
+            <div><strong>Spend Control Feature:</strong> I also introduced a Campaign Spend Control feature, letting
+              SMBs
+              dynamically resize their target audience to
+              match their budget — directly addressing a key adoption barrier.</div>
             <div class="arrow">→</div>
-            <div>Created a Campaign Spend Control feature to allow SMBs manage their advertising budgets. After
-              generating a campaign based on demographic selections, users can dynamically adjust the target audience
-              size (estimated recipients) to fit desired spend level.</div>
           </div>
         </div>
 
@@ -271,67 +290,67 @@
       <div class="bullet-list" style="margin-top:20px;">
         <div class="bullet-item">
           <div class="bullet-dot"></div>
-          <div><strong>Scrum Management:</strong> I managed the translation of requirements including the required
-            consent capture updates, portal design and APIs into detailed backlog of user stories, managed sprint
-            cycles, and conducted daily stand-ups to ensure the development team stayed focused on delivering the
-            privacy-compliant core functionality on time.</div>
+          <div><strong>Product Positioning:</strong> I reframed the offering from a commoditized "Bulk SMS" service to
+            a
+            value-added "Marketing Campaign as a Service" — developing the pricing model (pay-per-message with a
+            premium
+            for advanced targeting), sales narrative, and training for Sales and Customer Support teams.</div>
         </div>
       </div>
 
       <!-- PHONE + RIGHT BULLETS -->
       <div class="two-col" style="margin-top:16px;align-items:center;">
-        <div class="phone-wrap">
+        <div class="phone-wrap" style="flex-direction:column;align-items:center;">
           <img src="../images/whatsapp.png" alt="WhatsApp MCaaS Campaign" style="width:100%;border-radius:12px;">
+          <p style="font-size:11px;color:var(--muted);text-align:center;margin-top:6px;">Launched targeted awareness
+            campaign to SMBs</p>
         </div>
+
+
         <div class="right-col-list">
           <div class="right-bullet">
             <div class="dot"></div>
-            <div><strong>Sales Enablement:</strong> Drove product positioning from commoditized "Bulk SMS" to a
-              value-added "Marketing Campaign as a Service" solution by developing the core messaging and sales
-              narrative. Designed the order form and executed comprehensive training for Sales and Customer Support on
-              selling and provisioning the new service.</div>
-          </div>
-          <div class="right-bullet">
-            <div class="dot"></div>
-            <div><strong>Market Awareness:</strong> Worked with the Marketing team to design and execute a multi-channel
-              market awareness campaign focused on accelerating SMB customer acquisition and service usage. The campaign
-              strategy was built on various SMB segmentation, ensuring that messaging was precisely tailored and
-              contextually relevant to maximize engagement within each target segment.</div>
+            <div><strong>Market Awareness:</strong> Worked with the Marketing team to design and execute a
+              multi-channel (social media, email, SMS, etc.) market awareness campaign to educate SMB customers
+              regarding the new offering. The campaign messages were tailored to engage specific vertical within SMB
+              (retail, hospitality, healthcare, etc).
+            </div>
           </div>
           <div class="right-bullet">
             <div class="dot"></div>
             <div><strong>Launch:</strong> The first month of the MCaaS launch provided overwhelming validation for the
-              strategy and success of the product. The product successfully generated $100,000 in revenue in the first
-              30 days, exceeding our conservative internal targets.</div>
+              strategy and success of the product. More than 50 SMB customers signed up for the service in the first
+              30
+              days, 20% of which launched campaigns more than once, generating $100K in revenue which exceeded
+              Business
+              Case 30 day forecast by 35%.</div>
           </div>
         </div>
       </div>
-
+      <br>
       <!-- METRICS -->
       <div class="metrics">
         <div class="metric">
           <div class="val">$100K</div>
-          <div class="lbl">Revenue in First 30 Days</div>
-        </div>
-        <div class="metric">
-          <div class="val">3M+</div>
-          <div class="lbl">Consumers Served</div>
+          <div class="lbl">35% above 30 days target</div>
         </div>
         <div class="metric">
           <div class="val">MCaaS</div>
           <div class="lbl">First Data/API Monetization Platform</div>
         </div>
         <div class="metric">
-          <div class="val">SMB</div>
-          <div class="lbl">Primary Target Segment</div>
+          <div class="val">Precedent</div>
+          <div class="lbl">For compliant consumer data monetization</div>
         </div>
+
       </div>
 
     </div>
   </div>
 
   <footer class="site-footer">
-    &copy; 2026 Adam Kolt &mdash; <a href="mailto:adam.r.kolt@gmail.com">adam.r.kolt@gmail.com</a> &mdash; 714-273-2300
+    &copy; 2026 Adam Kolt &mdash; <a href="mailto:adam.r.kolt@gmail.com">adam.r.kolt@gmail.com</a> &mdash;
+    714-273-2300
   </footer>
 
 </body>
