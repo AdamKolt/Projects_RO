@@ -924,7 +924,7 @@ a { text-decoration: none; color: inherit; }
 .project-card {
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 22px 20px 18px;
+  padding: 16px 20px 13px;
   transition: box-shadow .2s, transform .2s;
   cursor: pointer;
 }
@@ -935,14 +935,14 @@ a { text-decoration: none; color: inherit; }
 }
 
 .card-icon {
-  width: 52px; height: 52px;
+  width: 68px; height: 68px;
   border-radius: 10px;
   display: flex; align-items: center; justify-content: center;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   overflow: hidden;
 }
 
-.card-icon svg { width: 28px; height: 28px; }
+.card-icon svg { width: 34px; height: 34px; }
 
 .card-title {
   display: flex;
