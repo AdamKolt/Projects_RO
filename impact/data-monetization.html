@@ -32,7 +32,7 @@
   </header>
 
   <!-- PROJECT NAV -->
-  <div style="background:#ECECEA; border-bottom:1px solid var(--border);">
+  <div style="background:#ECECEA;border-bottom:1px solid var(--border);position:sticky;top:56px;z-index:99;">
     <div style="max-width:860px;margin:0 auto;padding:0 48px;display:flex;gap:0;">
       <a href="digital-transformation.html"
         style="padding:10px 10px;font-size:11px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">Digital Transformation</a>
@@ -109,68 +109,64 @@
 
       <!-- BULLET LIST -->
       <div class="bullet-list">
+
         <div class="bullet-item">
           <div class="bullet-dot"></div>
-          <div><strong>Business Case:</strong> Developed a Business Case based on market analysis, cost of opportunity,
-            regulatory constraints, MVP and sales forecast. Secured executive buy-in and approval to allocate resources.
-            Designed a pay-per-message model with a premium for advanced targeting capabilities, directly aligning
-            the pricing with the value proposition.</div>
+          <div><strong>Business Case &amp; Pricing Model:</strong> Developed a Business Case grounded in market
+            analysis, opportunity cost, regulatory constraints, and MVP scope. Designed a pay-per-message pricing
+            model with a premium for advanced targeting — aligning price directly to value delivered — and secured
+            executive approval to fund the initiative.</div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-dot"></div>
+          <div><strong>Product Positioning:</strong> Reframed the offering from a commoditized "Bulk SMS" service to
+            a value-added "Marketing Campaigns as a Service" — developing the pricing rationale, sales narrative, and
+            training for Sales and Customer Support teams to position the product effectively at launch.</div>
         </div>
 
         <div class="bullet-item">
           <div class="bullet-dot"></div>
           <div><strong>Regulatory and Privacy Clearance:</strong> This was the make-or-break risk for the product.
-            I led the analysis with Legal and Regulatory teams, mapped out compliance options with their trade-offs, and
-            presented a recommended path to executives, securing formal approval that set a precedent for all future
+            Led the analysis with Legal and Regulatory teams, mapped compliance options with their trade-offs, and
+            presented a recommended path to executives — securing formal approval that set a precedent for all future
             data monetization initiatives at Ooredoo.</div>
         </div>
 
         <div class="bullet-item">
           <div class="bullet-dot"></div>
-          <div><strong>Building Consent Infrastructure:</strong> Designed and drove implementation of consent capture
-            across high-traffic touchpoints including service order forms, retail digital signing screens, and
-            broad-scale communication campaign for existing subscribers, alongside new opt-out controls in the consumer
-            mobile app. </div>
+          <div><strong>Consent Infrastructure:</strong> Designed and drove implementation of consent capture across
+            high-traffic touchpoints — service order forms, retail digital signing screens, and a broad-scale
+            subscriber communication — alongside new opt-out controls in the consumer mobile app.</div>
         </div>
 
         <div class="bullet-item">
           <div class="bullet-dot"></div>
-          <div><strong>API Design:</strong> Defined the audience query layer as a parameterized API, giving the product
-            the flexibility to support new targeting dimensions without re-engineering the core flow. Defined data
-            contracts, filtering logic and error handling for APIs. </div>
+          <div><strong>Audience Targeting Architecture:</strong> Architected a parameterized audience query API giving
+            SMBs self-serve access to Ooredoo's subscriber data without exposing raw demographics — designed to add
+            new targeting dimensions without re-engineering the core flow. Built privacy guardrails including
+            consent-flag filtering, frequency capping, and automatic audience redistribution to protect subscriber
+            experience and the long-term viability of the revenue stream.</div>
         </div>
-        <div class="bullet-item">
-          <div class="bullet-dot"></div>
-          <div><strong>Privacy Constraints Design:</strong> Defined backend logic to protect the privacy of consumers
-            including guardrails for consent-flag filtering, preventing demographics disclosure and reverse-engineering,
-            and frequency capping at the subscriber level with automatic audience redistribution to protect subscriber
-            experience. </div>
-        </div>
-
 
       </div>
 
-
-
-      <!-- TWO COL -->
-      <div class="two-col">
+      <!-- SOLUTION DESIGN + MOCKUP -->
+      <div class="two-col" style="margin-top:20px;">
         <div>
           <div class="bullet-list">
             <div class="bullet-item">
               <div class="bullet-dot"></div>
-              <div><strong>Solution Design:</strong> The underlying system required integrating five platforms (CRM,
-                data
-                warehouse, Bulk SMS gateway, Azure Communications for WhatsApp, and payment gateway). I designed
-                low-fidelity wireframes that abstracted all of into a clean five-step flow: select audience → write
-                message → choose channel → pay → launch.</div>
+              <div><strong>Solution Design:</strong> Integrated five platforms (CRM, data warehouse, Bulk SMS gateway,
+                Azure Communications for WhatsApp, and payment gateway) behind a clean five-step self-serve flow:
+                select audience → write message → choose channel → pay → launch.</div>
             </div>
           </div>
           <br>
           <div class="spend-note">
-            <div><strong>Spend Control Feature:</strong> I also introduced a Campaign Spend Control feature, letting
-              SMBs
-              dynamically resize their target audience to
-              match their budget — directly addressing a key adoption barrier.</div>
+            <div><strong>Spend Control Feature:</strong> Introduced a Campaign Spend Control feature letting SMBs
+              dynamically resize their target audience to match their budget — directly addressing a key adoption
+              barrier.</div>
             <div class="arrow">→</div>
           </div>
         </div>
@@ -180,77 +176,41 @@
           <div class="mockup-grid">
             <div class="mockup-col">
               <label>Nationality</label>
-              <div class="mockup-option">
-                <div class="mockup-checkbox"></div> Options text
-              </div>
-              <div class="mockup-option">
-                <div class="mockup-checkbox"></div> Options text
-              </div>
-              <div class="mockup-option">
-                <div class="mockup-checkbox"></div> Options text
-              </div>
+              <div class="mockup-option"><div class="mockup-checkbox"></div> Options text</div>
+              <div class="mockup-option"><div class="mockup-checkbox"></div> Options text</div>
+              <div class="mockup-option"><div class="mockup-checkbox"></div> Options text</div>
             </div>
             <div class="mockup-col">
               <label>Gender</label>
-              <div class="mockup-option">
-                <div class="mockup-checkbox"></div> Options text
-              </div>
-              <div class="mockup-option">
-                <div class="mockup-checkbox"></div> Options text
-              </div>
+              <div class="mockup-option"><div class="mockup-checkbox"></div> Options text</div>
+              <div class="mockup-option"><div class="mockup-checkbox"></div> Options text</div>
             </div>
             <div class="mockup-col">
               <label>Age Group</label>
-              <div class="mockup-option">
-                <div class="mockup-checkbox"></div> Options text
-              </div>
-              <div class="mockup-option">
-                <div class="mockup-checkbox"></div> Options text
-              </div>
-              <div class="mockup-option">
-                <div class="mockup-checkbox"></div> Options text
-              </div>
-              <div class="mockup-option">
-                <div class="mockup-checkbox"></div> Options text
-              </div>
+              <div class="mockup-option"><div class="mockup-checkbox"></div> Options text</div>
+              <div class="mockup-option"><div class="mockup-checkbox"></div> Options text</div>
+              <div class="mockup-option"><div class="mockup-checkbox"></div> Options text</div>
+              <div class="mockup-option"><div class="mockup-checkbox"></div> Options text</div>
             </div>
           </div>
           <div class="mockup-row2">
             <div class="mockup-col">
               <label>Zone</label>
-              <div class="mockup-option">
-                <div class="mockup-checkbox"></div> Options text
-              </div>
-              <div class="mockup-option">
-                <div class="mockup-checkbox"></div> Options text
-              </div>
-              <div class="mockup-option">
-                <div class="mockup-checkbox"></div> Options text
-              </div>
+              <div class="mockup-option"><div class="mockup-checkbox"></div> Options text</div>
+              <div class="mockup-option"><div class="mockup-checkbox"></div> Options text</div>
+              <div class="mockup-option"><div class="mockup-checkbox"></div> Options text</div>
             </div>
             <div class="mockup-col">
               <label>Location Type</label>
-              <div class="mockup-option">
-                <div class="mockup-checkbox"></div> Options text
-              </div>
-              <div class="mockup-option">
-                <div class="mockup-checkbox"></div> Options text
-              </div>
-              <div class="mockup-option">
-                <div class="mockup-checkbox"></div> Options text
-              </div>
+              <div class="mockup-option"><div class="mockup-checkbox"></div> Options text</div>
+              <div class="mockup-option"><div class="mockup-checkbox"></div> Options text</div>
+              <div class="mockup-option"><div class="mockup-checkbox"></div> Options text</div>
             </div>
             <div class="mockup-col">
               <label>Persona</label>
-              <div class="mockup-option">
-                <div class="mockup-checkbox"></div> Options text
-              </div>
-              <div class="mockup-option">
-                <div class="mockup-checkbox"></div> Options text
-              </div>
-              <div class="mockup-option">
-                <div class="mockup-checkbox"></div> Options text
-              </div>
+              <div class="mockup-option"><div class="mockup-checkbox"></div> Options text</div>
+              <div class="mockup-option"><div class="mockup-checkbox"></div> Options text</div>
+              <div class="mockup-option"><div class="mockup-checkbox"></div> Options text</div>
             </div>
           </div>
           <div class="mockup-btns">
@@ -281,45 +241,19 @@
         </div>
       </div>
 
-      <!-- SCRUM -->
+      <!-- MARKET AWARENESS + LAUNCH -->
       <div class="bullet-list" style="margin-top:20px;">
         <div class="bullet-item">
           <div class="bullet-dot"></div>
-          <div><strong>Product Positioning:</strong> I reframed the offering from a commoditized "Bulk SMS" service to
-            a
-            value-added "Marketing Campaign as a Service" — developing the pricing model (pay-per-message with a
-            premium
-            for advanced targeting), sales narrative, and training for Sales and Customer Support teams.</div>
+          <div><strong>Market Awareness:</strong> Partnered with Marketing to design and execute a multi-channel
+            awareness campaign — social media, email, SMS, and WhatsApp — educating SMB customers on the new
+            offering with messages tailored to specific verticals (retail, hospitality, healthcare).</div>
         </div>
-      </div>
-
-      <!-- PHONE + RIGHT BULLETS -->
-      <div class="two-col" style="margin-top:16px;align-items:center;">
-        <div class="phone-wrap" style="flex-direction:column;align-items:center;">
-          <img src="../images/whatsapp.png" alt="WhatsApp MCaaS Campaign" style="width:75%;border-radius:12px;">
-          <p style="font-size:11px;color:var(--muted);text-align:center;margin-top:6px;">Launched targeted awareness
-            campaign to SMBs</p>
-        </div>
-
-
-        <div class="right-col-list">
-          <div class="right-bullet">
-            <div class="dot"></div>
-            <div><strong>Market Awareness:</strong> Worked with the Marketing team to design and execute a
-              multi-channel (social media, email, SMS, etc.) market awareness campaign to educate SMB customers
-              regarding the new offering. The campaign messages were tailored to engage specific vertical within SMB
-              (retail, hospitality, healthcare, etc).
-            </div>
-          </div>
-          <div class="right-bullet">
-            <div class="dot"></div>
-            <div><strong>Launch:</strong> The first month of the MCaaS launch provided overwhelming validation for the
-              strategy and success of the product. More than 50 SMB customers signed up for the service in the first
-              30
-              days, 20% of which launched campaigns more than once, generating $100K in revenue which exceeded
-              Business
-              Case 30 day forecast by 35%.</div>
-          </div>
+        <div class="bullet-item">
+          <div class="bullet-dot"></div>
+          <div><strong>Launch &amp; Results:</strong> The first month delivered overwhelming validation. More than 50
+            SMB customers signed up within 30 days, 20% of whom launched campaigns more than once — generating $100K
+            in revenue and exceeding the Business Case 30-day forecast by 35%.</div>
         </div>
       </div>
       <br>
