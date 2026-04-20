@@ -243,6 +243,61 @@
     .download-btn:hover {
       background: #c8c8c8;
     }
+
+    .summary-bullets {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .summary-bullets li {
+      font-size: 13.5px;
+      color: #444;
+      line-height: 1.6;
+      padding-left: 14px;
+      position: relative;
+    }
+
+    .summary-bullets li::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .skills-line {
+      font-size: 13.5px;
+      color: #333;
+      line-height: 1.85;
+      margin: 0;
+    }
+
+    .tech-stack-line {
+      font-size: 13.5px;
+      color: #333;
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    .role-intro {
+      font-size: 13px;
+      color: #444;
+      font-style: italic;
+      margin-bottom: 10px;
+      line-height: 1.55;
+    }
+
+    .role-context {
+      font-size: 11.5px;
+      color: #888;
+      font-style: italic;
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
   </style>
 </head>
 
@@ -301,235 +356,160 @@
       </div>
 
       <!-- SUMMARY -->
-      <div class="resume-section" style="margin-bottom:8px;">
-        <div class="resume-section-title"></div>
+      <div class="resume-section">
+        <div class="resume-section-title">Summary</div>
+        <p style="font-size:13.5px;color:#333;line-height:1.65;margin-bottom:10px;">
+          Revenue Operations Leader with a track record of driving end-to-end RevOps strategy across Sales, Marketing,
+          and Customer Success through operational excellence, process optimization, GTM strategy, digital
+          transformation, and product innovation. Proficient in forecasting accuracy, pipeline management, CAC/LTV
+          optimization, lead-to-cash transformation, and end-to-end customer journey mapping. Proven ability to scale
+          predictable revenue engines and to translate complex data into board-ready insights.
+        </p>
+        <ul class="summary-bullets">
+          <li>Scaled a startup annual revenue from <strong>$5.8M to $57.8M</strong> in 4 years leading to acquisition.
+          </li>
+          <li>Drove <strong>NRR to 104%</strong> and sustained <strong>5% YoY growth</strong> in a saturated
+            <strong>$200M</strong> telecom SMB market.</li>
+          <li>Captured <strong>additional 3%</strong> in net profit by optimizing a <strong>$50M global infrastructure
+              project</strong> across 110 locations.</li>
+          <li>Generated <strong>$100K in first 30 days</strong> by launching a <strong>Product-Led Growth</strong>
+            data monetization platform.</li>
+          <li>Lowered overall <strong>CAC by 20%</strong> and <strong>improved ARPA by 5%</strong> through digital
+            transformation (<strong>B2B App</strong>).</li>
+        </ul>
       </div>
-
-      <!-- SUMMARY + TRACK RECORD CALLOUTS -->
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px;">
-        <div class="callout gold">
-          <div class="callout-bar"></div>
-          <div class="callout-body">
-            <div class="resume-section-title" style="border-bottom:none;margin-bottom:6px;">Summary</div>
-            <p style="font-size:13px;color:#333;line-height:1.65;">
-              Revenue Operations Leader specializing in architecting the systems, processes, and data infrastructure
-              required to transform high-level strategy into customer success and measurable growth. Expert at unifying
-              GTM teams through seamless handoffs and integrated data flows—turning fragmented pipelines into
-              consistent, predictable revenue engines.
-            </p>
-          </div>
-        </div>
-        <div class="callout navy">
-          <div class="callout-bar"></div>
-          <div class="callout-body">
-            <div class="resume-section-title" style="border-bottom:none;margin-bottom:6px;">Track Record</div>
-            <p style="font-size:13px;color:#333;line-height:1.65;">
-              Re-engineered Lead-to-Cash at Ooredoo, cutting order-to-activation time from 9 to 3 days. Reduced
-              overall CAC
-              by 20% through digital-first strategy and AI-powered acquisition model. Lifted retention save-ratio by 18%
-              via predictive churn analytics. Earlier, scaled a COTS platform 10&times; ($5.8M &rarr; $57.8M) across 13
-              states in 4 years &mdash; resulting in acquisition by EDS.
-            </p>
-          </div>
-        </div>
-      </div>
-
-
 
       <!-- SKILLS -->
       <div class="resume-section">
-        <div class="resume-section-title">Core Skills</div>
-        <div class="rc-skills-grid">
-          <div class="rc-skill-group">
-            <label>Revenue Operations</label>
-            <ul>
-              <li>Lead-to-Cash &amp; Quote-to-Cash Optimization</li>
-              <li>CRM Architecture &amp; Tech Stack Design</li>
-              <li>Pipeline Management &amp; Forecast Accuracy</li>
-              <li>GTM Systems &amp; Sales Enablement</li>
-              <li>Multi-Touch Attribution &amp; Revenue Intelligence</li>
-              <li>Customer Journey &amp; Lifecycle Design</li>
-            </ul>
-          </div>
-          <div class="rc-skill-group">
-            <label>GTM &amp; Commercial Strategy</label>
-            <ul>
-              <li>GTM Framework Design &amp; Market Entry</li>
-              <li>Unit Economics — LTV / CAC / Payback Period</li>
-              <li>Revenue Forecasting &amp; Pipeline Analytics</li>
-              <li>ROI &amp; Business Case Development</li>
-              <li>Value Stream Mapping &amp; Process Automation</li>
-              <li>Stakeholder Alignment &amp; Executive Governance</li>
-            </ul>
-          </div>
-          <div class="rc-skill-group">
-            <label>Data &amp; Revenue Analytics</label>
-            <ul>
-              <li>SQL, Power BI, Tableau, Advanced Excel</li>
-              <li>Churn Modeling &amp; Retention Analytics</li>
-              <li>KPI Dashboards &amp; Revenue Intelligence</li>
-              <li>CRM Data Migration &amp; Integrity Audits</li>
-              <li>AI Integration — RAG, GPT-4o, Copilot Studio</li>
-              <li>Google Analytics, Firebase, Swagger API</li>
-            </ul>
-          </div>
-        </div>
+        <div class="resume-section-title">Skills</div>
+        <p class="skills-line">
+          Data Governance &nbsp;|&nbsp; Data-Driven Revenue Operations &nbsp;|&nbsp; Predictive ARR Forecasting
+          &nbsp;|&nbsp; CAC, LTV, NRR Optimization &nbsp;|&nbsp; Capacity Planning &nbsp;|&nbsp; Pipeline Management
+          &nbsp;|&nbsp; Territory Planning &amp; Quotas &nbsp;|&nbsp; Lead-to-Cash Optimization &nbsp;|&nbsp;
+          MQL-to-SQL &nbsp;|&nbsp; Compensation &amp; Incentive Design &nbsp;|&nbsp; Predictive Retention &amp;
+          Time-to-Value &nbsp;|&nbsp; Renewal Management &nbsp;|&nbsp; Board Reporting
+        </p>
       </div>
 
+      <!-- TECH STACK -->
+      <div class="resume-section">
+        <div class="resume-section-title">Tech Stack</div>
+        <p class="tech-stack-line">
+          Salesforce, HubSpot, Oracle SFA, Siebel CRM, Oracle Eloqua, Google Analytics, Firebase, Kloudville
+          (marketplace), SQL, UML, ERD, Power BI, Advanced Excel, Figma, CPQ, CMS, GitHub, Confluence, MS Dynamics
+          365, Copilot Studio, GPT-4o (Azure OpenAI).
+        </p>
+      </div>
 
       <!-- EXPERIENCE -->
       <div class="resume-section">
         <div class="resume-section-title">Professional Experience</div>
 
+        <!-- Ooredoo — SMB Operations Director -->
         <div class="resume-role">
           <div class="resume-role-header">
-            <span class="resume-role-title">Director, SMB Operations</span>
-            <span class="resume-role-date">Doha, Qatar | 09/2014 &ndash; 04/2026</span>
+            <span class="resume-role-title">SMB Operations Director</span>
+            <span class="resume-role-date">Doha, Qatar | 06/2020 &ndash; 04/2026</span>
           </div>
           <div class="resume-role-company">Ooredoo</div>
-          <div style="font-size:11.5px;color:#888;font-style:italic;margin-bottom:10px;">Ooredoo is a fast-paced
-            multi-national corporation offering telecom, cloud, and ICT services in 13 countries with 100m subscribers.
+          <div class="role-context">
+            Ooredoo is a fast-paced multi-national corporation offering telecom, cloud, and ICT services in 13
+            countries with 100m subscribers. Ooredoo Qatar is the head office and leader of innovation across the
+            group.
           </div>
-
-          <div class="resume-sub">
-            <div class="resume-sub-label">Process Optimization</div>
-            <ul>
-              <li>Accelerated revenue by re-engineering the omnichannel Lead-to-Cash (L2C) lifecycle;
-                eliminated cross-functional bottlenecks and improved order accuracy through targeted automation.</li>
-              <li>Modernized business processes using BPMN 2.0 (As-Is/To-Be) modeling and Value Stream Mapping (VSM) to
-                identify and automate high-friction manual procedures.</li>
-              <li>Engineered hybrid fulfillment architectures that auto-provision core services (Mobile/FBB), activate
-                SaaS (M365/GWS) via a marketplace platform, and seamlessly route complex orders to assisted channels
-                &mdash; preserving human touchpoints without breaking the customer experience.</li>
-              <li>Uplifted net profit by 3% by optimizing scheduling of partners in delivering a $50M global network
-                project.</li>
-            </ul>
-          </div>
-
-          <div class="resume-sub">
-            <div class="resume-sub-label">GTM Systems &amp; AI Integration</div>
-            <ul>
-              <li>Reduced combined Customer Acquisition Cost (CAC) by 20% by spearheading Qatar&rsquo;s first B2B
-                self-service portal and mobile app, shifting the acquisition model to a digital-first strategy.</li>
-              <li>Cut digital-orders CAC by a further 50% by architecting a secure RAG-based (Retrieval-Augmented
-                Generation) AI sales chatbot integrating GPT-4o with CRM and regulatory tariff libraries to automate
-                B2B inquiries and qualify leads.</li>
-              <li>Eliminated legacy product catalog complexities by designing a scalable, data-driven taxonomy using
-                UML, significantly improving product discoverability and user adoption.</li>
-              <li>Designed backend API ecosystems using Swagger to integrate Oracle SFA and Siebel CRM, enabling
-                real-time customer validation and automated lead tracking via Google Analytics/Firebase.</li>
-            </ul>
-          </div>
-
-          <div class="resume-sub">
-            <div class="resume-sub-label">Sales Enablement &amp; Revenue Intelligence</div>
-            <ul>
-              <li>Reduced agent onboarding ramp-up time by 50% (4 to 2 months) by implementing a B2B Sales Academy
-                program and centralized sales CMS &mdash; sustaining 5% YoY revenue growth in a saturated market.</li>
-              <li>Expanded verified market coverage from 62% to 89% in 3 months by designing 65 GIS-driven sales
-                territories and deploying a mobile SFA mini-CRM delivering real-time customer, service, and lead
-                visibility to field reps.</li>
-              <li>Architected an omnichannel data capture framework that synchronized CRM touchpoints, producing
-                higher-quality calling lists and driving outbound conversion rates from 13% to 25% while giving field
-                sales a real-time &ldquo;Single Source of Truth.&rdquo;</li>
-              <li>Improved retention save-ratio by 18% through predictive churn models analyzing high-value triggers
-                such as bill shock, technical friction, and usage patterns &mdash; contributing to CSAT lift from 67%
-                to 84%.</li>
-            </ul>
-          </div>
-
-          <div class="resume-sub">
-            <div class="resume-sub-label">Product-Led Revenue</div>
-            <ul>
-              <li>Generated $100K in new revenue within the first 30 days launching a disruptive data monetization and
-                B2B2C
-                platform built on &ldquo;Compliance-by-Design&rdquo; principles to navigate strict privacy regulations.
-              </li>
-              <li>Secured market share by developing a B2B2C platform for property managers to automate tenant service
-                cycles, creating a &ldquo;competitive moat&rdquo; through a three-way value proposition.</li>
-              <li>Spearheaded Sovereign Cloud productization across Azure, GCP, and AWS, streamlining the CX via
-                consumption-based subscription plans for VMs and BaaS (Backup as a Service).</li>
-              <li>Improved customer stickiness and ARPA by 5% by launching Value-Added Services (VAS) in partnership
-                with industry leaders including Microsoft, Google, Cisco, Huawei, and NVIDIA.</li>
-            </ul>
-          </div>
+          <p class="role-intro">
+            Owned end-to-end Revenue Operations across Sales, Marketing, and Customer Success for a
+            <strong>$200M SMB business</strong>, enabling predictable growth, product innovation, improved
+            forecasting accuracy, and full-funnel optimization.
+          </p>
+          <ul>
+            <li>Sustained <strong>5% YoY revenue growth</strong> and drove <strong>NRR to 104%</strong> by aligning
+              GTM functions to prioritize ARPA and ARPU expansion through cross-functional digital-first strategies.
+            </li>
+            <li>Reduced overall <strong>CAC by 20%</strong> by shifting to digital-led acquisition and architecting a
+              secure RAG-based AI chatbot integrating GPT-4o with CRM and regulatory tariff libraries to automate B2B
+              inquiries and lead generation.</li>
+            <li>Improved <strong>CAC:LTV ratio by 30%</strong> through rigorous demand generation, A/B testing,
+              multi-touch attribution, and the launch of managed and value-add services to diversify revenue beyond
+              core products.</li>
+            <li>Accelerated <strong>revenue velocity by 20%</strong> through continuous optimization of the
+              omnichannel Lead-to-Cash (L2C) lifecycle, eliminating cross-functional bottlenecks, improving order
+              accuracy, and leveraging automation.</li>
+            <li>Improved retention <strong>save ratio by 18%</strong> by developing predictive churn models based on
+              high-value triggers, including bill shock, technical friction points, usage, and activations.</li>
+            <li>Improved <strong>LTV by 4%</strong> and <strong>ARPA by 5%</strong> through partnerships with
+              Microsoft, Google, Cisco, Huawei, and NVIDIA to develop and launch Value-Added Services (VAS) including
+              compute consumption plans and managed services.</li>
+            <li>Generated <strong>$100K in first 30 days</strong> by launching a Product-Led Growth data monetization
+              and B2B2C platform while navigating strict privacy and data compliance regulations.</li>
+            <li>Reduced agent onboarding <strong>ramp-up time by 50%</strong> by implementing a B2B Sales Academy
+              program and sales CMS.</li>
+          </ul>
         </div>
 
+        <!-- Ooredoo — Assistant Director Solutions -->
+        <div class="resume-role">
+          <div class="resume-role-header">
+            <span class="resume-role-title">Assistant Director Solutions</span>
+            <span class="resume-role-date">Doha, Qatar | 09/2014 &ndash; 06/2020</span>
+          </div>
+          <div class="resume-role-company">Ooredoo</div>
+          <ul>
+            <li>Improved <strong>bid-to-win ratio by 28%</strong> through the implementation of strict pipeline
+              hygiene, integrated CPQ, and digital Lead-to-Cash workflows.</li>
+            <li>Directed the partnership and delivery of a <strong>$50M global network project</strong> for 110
+              diplomatic missions; optimized vendor scheduling and partner selection to boost profit
+              <strong>margins by 3%</strong>.</li>
+          </ul>
+        </div>
+
+        <!-- EDS -->
         <div class="resume-role">
           <div class="resume-role-header">
             <span class="resume-role-title">Director, State &amp; Local Government Accounts</span>
-            <span class="resume-role-date">Raleigh, NC | 06/2010 &ndash; 09/2014</span>
+            <span class="resume-role-date">Raleigh, NC | 06/2009 &ndash; 09/2014</span>
           </div>
           <div class="resume-role-company">EDS, an HP Company</div>
-
-          <div class="resume-sub">
-            <div class="resume-sub-label">Stakeholder Management</div>
-            <ul>
-              <li>Optimized P&amp;L and operational delivery for a high-stakes portfolio of government contracts,
-                achieving a 100% renewal and extension rate through proactive risk mitigation and value-driven service
-                delivery.</li>
-              <li>Managed complex stakeholder landscapes, serving as the primary liaison between government entities and
-                internal delivery teams to guide requirements and ensure 100% compliance.</li>
-              <li>Led executive meetings presenting progress and contingency plans aligning milestones to objectives.
-              </li>
-            </ul>
-          </div>
-
-          <div class="resume-sub">
-            <div class="resume-sub-label">Cross-Functional Alignment</div>
-            <ul>
-              <li>Orchestrated cross-functional onshore/offshore development teams to deliver bespoke software
-                solutions, ensuring traceability from initial client requirements to final acceptance.</li>
-            </ul>
-          </div>
+          <ul>
+            <li>Managed P&amp;L, executive stakeholders, and operational delivery for a complex portfolio of
+              government contracts, securing <strong>100% renewal and contract extensions</strong>.</li>
+            <li>Directed onshore/offshore development teams to deliver custom software solutions, ensuring alignment
+              between client requirements and technical execution.</li>
+            <li>Led sponsor meetings to review project progress, address challenges, and develop proactive solutions
+              and contingency plans.</li>
+          </ul>
         </div>
 
+        <!-- Saber Consulting -->
         <div class="resume-role">
           <div class="resume-role-header">
             <span class="resume-role-title">Systems Development Principal</span>
-            <span class="resume-role-date">Portland, OR | 08/2002 &ndash; 06/2010</span>
+            <span class="resume-role-date">Portland, OR | 08/2002 &ndash; 06/2009</span>
           </div>
           <div class="resume-role-company">Saber Consulting</div>
-
-          <div class="resume-sub">
-            <div class="resume-sub-label">Product Development</div>
-            <ul>
-              <li>Engineered a market-disruptive Voter Registration &amp; Elections Management system in response to the
-                HAVA Act of 2002 scaling annual revenue 10&times; ($5.8M to $57.8M) in 4 years, resulting in acquisition
-                by
-                EDS.</li>
-              <li>Orchestrated large-scale Joint Application Design (JAD) sessions across 13 states, utilizing DSDM
-                methodology for rapid prototyping and iterative feedback to ensure compliance and consensus.</li>
-              <li>Transformed complex legislative mandates into functional specifications, bridging the gap between
-                state-level policy requirements and technical execution to deliver user-centric agency portals.</li>
-              <li>Architected a scalable, parameter-driven product design that reconciled diverse state-level
-                requirements into a single, modular COTS platform, ensuring 100% regulatory compliance and requirement
-                traceability.</li>
-            </ul>
-          </div>
-
-          <div class="resume-sub">
-            <div class="resume-sub-label">Delivery Governance</div>
-            <ul>
-              <li>Developed a repeatable implementation framework and standardized deployment playbook, significantly
-                reducing technical risk and accelerating time-to-market across multiple complex jurisdictions.</li>
-              <li>Led requirements elicitation and UX/UI design strategy for a diverse portfolio of Oregon state agency
-                workflows, successfully migrating legacy manual processes into high-performance digital solutions.</li>
-            </ul>
-          </div>
+          <ul>
+            <li>Scaled annual revenue from <strong>$5.8M to $57.8M in 4 years</strong> by leading functional design
+              and national rollout of a market-disruptive Elections Management and Voter Registration system &mdash;
+              leading to the company&rsquo;s acquisition by EDS in 2008.</li>
+            <li>Led JAD and design sessions to coordinate complex business requirements from a diverse stakeholder
+              base across <strong>13 states</strong> and hundreds of counties to architect a highly configurable COTS
+              solution, enabling rapid multi-state deployment without custom code overhead.</li>
+            <li>Standardized the <strong>implementation blueprint</strong> and <strong>national sales model</strong>
+              across 13 states, directly positioning the company for a successful acquisition by EDS.</li>
+            <li>Led <strong>M&amp;A due diligence</strong> and post-merger integration for the acquisition of
+              Covansys Systems; successfully onboarded 300 employees and optimized redundant operational costs.</li>
+          </ul>
         </div>
 
       </div>
-
 
       <!-- EDUCATION & CERTS -->
       <div class="resume-section">
         <div class="resume-section-title">Education &amp; Certifications</div>
         <div class="cert-grid">
-          <div class="cert-item"><strong>Master of Business Administration (MBA)</strong><span>Marylhurst University,
-              Oregon</span></div>
-          <div class="cert-item"><strong>Bachelor of Electrical Engineering (BEE)</strong><span>Qatar University</span>
-          </div>
+          <div class="cert-item"><strong>MBA, Business Administration</strong><span>Marylhurst University &mdash;
+              Portland, OR</span></div>
+          <div class="cert-item"><strong>B.S., Electrical Engineering</strong><span>Qatar University</span></div>
           <div class="cert-item"><strong>Stanford Certified Project Manager (SCPM)</strong><span>Stanford
               University</span></div>
           <div class="cert-item"><strong>Project Management Professional (PMP)</strong><span>Project Management
