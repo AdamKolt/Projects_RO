@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lead Mockup</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background: #f3f3f1; padding: 16px; }
+
+    .lead-card {
+      width: 880px;
+      background: #fff;
+      border: 1px solid #d8d6d2;
+      border-radius: 6px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, .04);
+      overflow: hidden;
+    }
+
+    /* Header */
+    .lead-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 16px;
+      border-bottom: 1px solid #e5e3df;
+      background: #fafaf8;
+    }
+    .lead-title { font-size: 13px; color: #2b2b2b; font-weight: 600; }
+    .lead-title .crumb { color: #8a8a8a; font-weight: 500; }
+    .lead-title .star { color: #c9c7c2; margin-left: 6px; cursor: pointer; }
+    .lead-title .help { color: #b3b1ac; font-size: 11px; margin-left: 4px; }
+
+    .lead-actions { display: flex; gap: 6px; }
+    .btn {
+      font-size: 11.5px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 3px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      letter-spacing: 0.2px;
+    }
+    .btn-action { background: #f0a046; color: #fff; }
+    .btn-save { background: #f0a046; color: #fff; }
+    .btn-save-close { background: #f0a046; color: #fff; }
+    .btn-cancel { background: #fff; color: #555; border-color: #d8d6d2; }
+    .btn .caret { font-size: 9px; margin-left: 4px; }
+
+    /* Body grid */
+    .lead-body { display: grid; grid-template-columns: 130px 1fr; min-height: 240px; }
+
+    /* Sidebar */
+    .lead-sidebar {
+      background: #fff;
+      border-right: 1px solid #e5e3df;
+      padding: 8px 0;
+    }
+    .nav-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 16px;
+      font-size: 12px;
+      color: #f0a046;
+      border-left: 3px solid transparent;
+      cursor: pointer;
+    }
+    .nav-item.active { border-left-color: #f0a046; font-weight: 600; background: #fff7ec; }
+    .nav-item .ico { font-size: 13px; width: 14px; text-align: center; }
+    .nav-item:not(.active) { color: #f0a046; }
+
+    /* Form */
+    .lead-form {
+      padding: 16px 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px 32px;
+      background: #fff;
+    }
+    .field { display: grid; grid-template-columns: 100px 1fr; align-items: center; gap: 10px; }
+    .field-label { font-size: 11.5px; color: #5a5a5a; text-align: right; font-weight: 500; }
+    .field-label .req { color: #d04545; margin-right: 2px; }
+    .field-input {
+      font-size: 11.5px;
+      color: #2b2b2b;
+      padding: 5px 8px;
+      border: 1px solid #d8d6d2;
+      border-radius: 3px;
+      background: #fff;
+      min-height: 24px;
+      display: flex;
+      align-items: center;
+    }
+    .field-input.disabled { background: #f6f5f2; color: #4a4a4a; }
+    .field-input.placeholder { color: #b3b1ac; }
+    .field-input.tall { min-height: 38px; align-items: flex-start; padding-top: 6px; }
+
+    .pill {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #f6f5f2; border: 1px solid #e0ded9; padding: 2px 8px; border-radius: 3px;
+      font-size: 11px; color: #2b2b2b;
+    }
+    .pill .x { color: #b3b1ac; cursor: pointer; }
+
+    .with-buttons { display: flex; align-items: center; gap: 6px; }
+    .with-buttons .field-input { flex: 1; }
+    .mini-btn {
+      font-size: 10.5px; font-weight: 600; padding: 4px 10px; border-radius: 3px;
+      border: 1px solid #d8d6d2; background: #fff; cursor: pointer; color: #555;
+    }
+    .mini-btn.reject { background: #fff; }
+    .mini-btn.accept { background: #fff; }
+
+    .select-caret {
+      margin-left: auto; color: #b3b1ac; font-size: 9px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="lead-card">
+    <!-- Header -->
+    <div class="lead-header">
+      <div class="lead-title">
+        Edit Lead: Trading &amp; Contracting FBB &amp; P... <span class="crumb">: Summary</span>
+        <span class="help">&#9432;</span>
+        <span class="star">&#9734;</span>
+      </div>
+      <div class="lead-actions">
+        <button class="btn btn-action">Actions <span class="caret">&#9660;</span></button>
+        <button class="btn btn-save">Save</button>
+        <button class="btn btn-save-close">Save and Close</button>
+        <button class="btn btn-cancel">Cancel</button>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div class="lead-body">
+      <!-- Sidebar -->
+      <div class="lead-sidebar">
+        <div class="nav-item active"><span class="ico">&#9776;</span> Summary</div>
+        <div class="nav-item"><span class="ico">&#9998;</span> Notes</div>
+        <div class="nav-item"><span class="ico">&#128100;</span> Contacts</div>
+        <div class="nav-item"><span class="ico">&#127919;</span> Opportunities</div>
+      </div>
+
+      <!-- Form -->
+      <div class="lead-form">
+        <!-- Left column -->
+        <div class="field">
+          <div class="field-label">Lead Number</div>
+          <div class="field-input disabled">SFA-2022/0111/78</div>
+        </div>
+        <div class="field">
+          <div class="field-label">Account Owner</div>
+          <div class="field-input">Ahmed Ali</div>
+        </div>
+
+        <div class="field">
+          <div class="field-label"><span class="req">*</span>Lead Name</div>
+          <div class="field-input">Trading &amp; Contracting FBB &amp; Postpaid Acquisition</div>
+        </div>
+        <div class="field">
+          <div class="field-label">Campaign Name</div>
+          <div class="field-input placeholder">Select <span class="select-caret">&#9660;</span></div>
+        </div>
+
+        <div class="field">
+          <div class="field-label">Existing Account</div>
+          <div class="field-input">
+            <span class="pill">UMM BAB COLD STORES-OFF <span class="x">&#10005;</span></span>
+          </div>
+        </div>
+        <div class="field">
+          <div class="field-label">Current Updates</div>
+          <div class="field-input tall"></div>
+        </div>
+
+        <div class="field">
+          <div class="field-label">Owner</div>
+          <div class="with-buttons">
+            <div class="field-input">Saikrishnan Satheesh K <span class="select-caret">&#9660;</span></div>
+            <button class="mini-btn reject">Reject</button>
+            <button class="mini-btn accept">Accept</button>
+          </div>
+        </div>
+        <div class="field">
+          <div class="field-label">Notes</div>
+          <div class="field-input tall"></div>
+        </div>
+
+        <div class="field">
+          <div class="field-label">Phones</div>
+          <div class="field-input">(66567047): //44711592//</div>
+        </div>
+        <div class="field">
+          <div class="field-label">Call Cycle</div>
+          <div class="field-input">New <span class="select-caret">&#9660;</span></div>
+        </div>
+
+        <div class="field">
+          <div class="field-label">New Contacts</div>
+          <div class="field-input tall"></div>
+        </div>
+        <div class="field">
+          <div class="field-label">Call Back Date</div>
+          <div class="field-input placeholder">dd-mmm-yyyy <span style="margin-left:auto;color:#b3b1ac;">&#128197;</span></div>
+        </div>
+
+        <div class="field">
+          <div class="field-label">Products</div>
+          <div class="field-input">Fibre Business Landline 150 / QTY:150 / MRC:1</div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
