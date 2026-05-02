@@ -863,7 +863,7 @@ a { text-decoration: none; color: inherit; }
 .hero-inner {
   max-width: 860px;
   margin: 0 auto;
-  padding: 16px 48px 0;
+  padding: 0 48px 0;
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 40px;
@@ -909,7 +909,7 @@ a { text-decoration: none; color: inherit; }
 .cards-section {
   max-width: 860px;
   margin: 0 auto;
-  padding: 28px 48px 56px;
+  padding: 24px 48px 56px;
   background: var(--white);
   box-shadow: 0 4px 40px rgba(0,0,0,.10);
 }
