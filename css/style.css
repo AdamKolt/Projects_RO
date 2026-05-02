@@ -909,7 +909,7 @@ a { text-decoration: none; color: inherit; }
 .cards-section {
   max-width: 860px;
   margin: 0 auto;
-  padding: 40px 48px 56px;
+  padding: 28px 48px 56px;
   background: var(--white);
   box-shadow: 0 4px 40px rgba(0,0,0,.10);
 }
@@ -923,7 +923,7 @@ a { text-decoration: none; color: inherit; }
 .project-card {
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 16px 20px 13px;
+  padding: 13px 20px 10px;
   transition: box-shadow .2s, transform .2s;
   cursor: pointer;
 }
@@ -934,10 +934,10 @@ a { text-decoration: none; color: inherit; }
 }
 
 .card-icon {
-  width: 68px; height: 68px;
+  width: 58px; height: 58px;
   border-radius: 10px;
   display: flex; align-items: center; justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   overflow: hidden;
 }
 
@@ -971,7 +971,7 @@ a { text-decoration: none; color: inherit; }
 /* Homepage cards: icon left, two-line title right, desc below */
 .cards-grid .project-card {
   display: grid;
-  grid-template-columns: 68px 1fr;
+  grid-template-columns: 58px 1fr;
   column-gap: 14px;
   align-items: center;
 }
@@ -980,7 +980,7 @@ a { text-decoration: none; color: inherit; }
 .cards-grid .project-card .card-title h3 { line-height: 1.2; }
 .cards-grid .project-card .card-desc {
   grid-column: 1 / -1;
-  margin-top: 14px;
+  margin-top: 10px;
 }
 
 /* ── ABOUT PAGE ── */
