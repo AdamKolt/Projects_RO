@@ -6,9 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mission Critical Project – Adam Kolt MBA</title>
   <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .metric-cell { position: relative; padding: 14px 16px; text-align: center; }
+    .metric-cell + .metric-cell::before {
+      content: ''; position: absolute; left: -1px; top: 12px; bottom: 12px;
+      border-left: 2px solid var(--border);
+    }
+  </style>
+
 </head>
 
 <body>
@@ -39,7 +47,7 @@
         Self-Service</a>
       <a href="L2C-Optimization.html"
         style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">L2C
-        Optimization</a>
+        Acceleration</a>
       <a href="codified-sales.html"
         style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">Codified
         Sales</a>

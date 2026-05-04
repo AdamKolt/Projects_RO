@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>B2B Sales Academy – Adam Kolt MBA</title>
   <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <style>
@@ -15,6 +15,14 @@
       border-bottom: none;
     }
   </style>
+  <style>
+    .metric-cell { position: relative; padding: 14px 16px; text-align: center; }
+    .metric-cell + .metric-cell::before {
+      content: ''; position: absolute; left: -1px; top: 12px; bottom: 12px;
+      border-left: 2px solid var(--border);
+    }
+  </style>
+
 </head>
 
 <body>
@@ -45,7 +53,7 @@
         Self-Service</a>
       <a href="L2C-Optimization.html"
         style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">L2C
-        Optimization</a>
+        Acceleration</a>
       <a href="codified-sales.html"
         style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">Codified
         Sales</a>
@@ -91,7 +99,9 @@
       <div class="callout gold" style="margin-top:20px;">
         <div class="callout-bar"></div>
         <div class="callout-body">
-          Built and ran the B2B Sales Academy at Ooredoo — a multi-product two-tier certification program embedded in
+          
+              <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">Context</div>
+              Built and ran the B2B Sales Academy at Ooredoo — a multi-product two-tier certification program embedded in
           the <strong>PLM</strong> process, serving <strong>200+ frontline sellers, account managers, channel
             partners, retail agents, </strong> and other sales related functions across
           Mobile, Fixed, and
@@ -116,27 +126,27 @@
       <!-- HEADLINE METRICS -->
       <div
         style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:#F7F6F2;border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-top:20px;margin-bottom:24px;">
-        <div style="padding:14px 16px;text-align:center;border-right:1px solid var(--border);">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">200+</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            200+</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             Sellers &amp; Partners Enrolled</div>
         </div>
-        <div style="padding:14px 16px;text-align:center;border-right:1px solid var(--border);">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">85%</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            85%</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             Certification Completion Rate</div>
         </div>
-        <div style="padding:14px 16px;text-align:center;border-right:1px solid var(--border);">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">+15%</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            +15%</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             Post-Cert Performance Uplift</div>
         </div>
-        <div style="padding:14px 16px;text-align:center;">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">4 mo &rarr; 2 mo</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            4 mo &rarr; 2 mo</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             Faster Agent Ramp</div>
         </div>
@@ -272,21 +282,22 @@
 
       </div>
 
-      <!-- OUTCOMES -->
-      <div
-        style="background:#F7F6F2;border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin-top:24px;">
-        <h4 style="font-family:'Playfair Display',serif;font-size:16px;color:var(--navy);margin:0 0 10px;">Outcomes
-        </h4>
-        <ul style="margin:0;padding-left:18px;font-size:13.5px;color:#333;line-height:1.7;">
-          <li><strong>85% certification completion rate</strong> across the 200+ cohort.</li>
-          <li><strong>15% post-certification performance uplift</strong> measured against pre-cert attainment.</li>
-          <li><strong>50% reduction in frontline ramp time</strong> (4 months &rarr; 2 months).</li>
-          <li><strong>Reps quality of knowledge reflected positively in CSAT and NPS</strong> across the SMB commercial
-            organization.</li>
-          <li><strong>Consistent on-message sales-and-retention motions</strong> across direct and indirect channels,
-            enabling
-            the SOHO partner program to deliver both sales and retention independently.</li>
-        </ul>
+      <!-- CLOSING CALLOUT -->
+      <div class="callout green" style="margin-top:32px;">
+        <div class="callout-bar"></div>
+        <div class="callout-body">
+          <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">
+            Outcomes</div>
+          <ul style="margin:0;padding-left:18px;line-height:1.7;">
+            <li>Cut <strong>frontline ramp time from 4 months to 2</strong> (50% reduction)</li>
+            <li>Lifted <strong>post-cert team performance by 15%</strong> against pre-cert attainment</li>
+            <li>Embedded <strong>methodology fluency (MEDDPICC, Challenger, COTM)</strong> across the sales force</li>
+            <li>Built a <strong>24/7 RAG sales assistant</strong> that turned the academy into a continuously available
+              coach</li>
+            <li>Created a <strong>scalable, AI-native enablement engine</strong> certifying 200+ sellers and partners
+              with consistent quality across direct and indirect channels</li>
+          </ul>
+        </div>
       </div>
 
     </div>

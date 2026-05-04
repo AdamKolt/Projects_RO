@@ -6,9 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Field Enablement – Adam Kolt MBA</title>
   <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .metric-cell { position: relative; padding: 14px 16px; text-align: center; }
+    .metric-cell + .metric-cell::before {
+      content: ''; position: absolute; left: -1px; top: 12px; bottom: 12px;
+      border-left: 2px solid var(--border);
+    }
+  </style>
+
 </head>
 
 <body>
@@ -39,7 +47,7 @@
         Self-Service</a>
       <a href="L2C-Optimization.html"
         style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">L2C
-        Optimization</a>
+        Acceleration</a>
       <a href="codified-sales.html"
         style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">Codified
         Sales</a>
@@ -87,7 +95,9 @@
       <div class="callout gold" style="margin-top:20px;">
         <div class="callout-bar"></div>
         <div class="callout-body">
-          Ooredoo Qatar's sales force spans 100+ indirect channel partner sales agents, direct field reps, dedicated
+          
+              <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">Context</div>
+              Ooredoo Qatar's sales force spans 100+ indirect channel partner sales agents, direct field reps, dedicated
           account managers, and retail staff — each expected to sell an increasingly complex product portfolio in a
           highly competitive, saturated market.
         </div>
@@ -104,27 +114,27 @@
       <!-- HEADLINE METRICS -->
       <div
         style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:#F7F6F2;border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-top:28px;margin-bottom:8px;">
-        <div style="padding:14px 16px;text-align:center;border-right:1px solid var(--border);">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">65</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            65</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             GIS-Integrated Sales Zones</div>
         </div>
-        <div style="padding:14px 16px;text-align:center;border-right:1px solid var(--border);">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">62% &rarr; 89%</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            62% &rarr; 89%</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             Market Coverage Lift</div>
         </div>
-        <div style="padding:14px 16px;text-align:center;border-right:1px solid var(--border);">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">95%</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            95%</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             Forecast Accuracy / 3.3&times; Coverage</div>
         </div>
-        <div style="padding:14px 16px;text-align:center;">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">5% YoY</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            5% YoY</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             Revenue Growth, Saturated Market</div>
         </div>
@@ -297,14 +307,20 @@
       </div>
 
       <!-- CLOSING CALLOUT -->
-      <div class="callout navy" style="margin-top:32px;">
+      <div class="callout green" style="margin-top:32px;">
         <div class="callout-bar"></div>
         <div class="callout-body">
-          Together, these initiatives turned a reactive, unstructured field force into a territorially accountable,
-          data-driven sales motion: <strong>65 zones with full coverage</strong>, mobile CRM in every rep's hand,
-          real-time collateral and e-signature in the field, and a weekly coaching cadence anchored to a single source
-          of performance truth &mdash; sustaining <strong>5% YoY growth</strong> in one of the most competitive
-          telecom markets in the region.
+          <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">
+            Outcomes</div>
+          <ul style="margin:0;padding-left:18px;line-height:1.7;">
+            <li>Lifted <strong>addressable market coverage from 62% to 89%</strong> in three months</li>
+            <li>Improved <strong>field productivity</strong> through territory ownership and data-driven zoning</li>
+            <li>Strengthened <strong>forecast confidence</strong> (95% accuracy / 3.3&times; pipeline coverage) via
+              weekly retro cadence</li>
+            <li>Sustained <strong>5% YoY revenue growth</strong> in a saturated, price-pressured market</li>
+            <li>Equipped the field force with a unified <strong>mobile CRM, in-field collateral, and e-signature
+                stack</strong> &mdash; turning every visit into an enabled sales motion</li>
+          </ul>
         </div>
       </div>
 

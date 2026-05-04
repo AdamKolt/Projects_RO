@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Codified Sales – Adam Kolt MBA</title>
   <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <style>
@@ -14,6 +14,14 @@
       border-bottom: none;
     }
   </style>
+  <style>
+    .metric-cell { position: relative; padding: 14px 16px; text-align: center; }
+    .metric-cell + .metric-cell::before {
+      content: ''; position: absolute; left: -1px; top: 12px; bottom: 12px;
+      border-left: 2px solid var(--border);
+    }
+  </style>
+
 </head>
 
 <body>
@@ -44,7 +52,7 @@
         Self-Service</a>
       <a href="L2C-Optimization.html"
         style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">L2C
-        Optimization</a>
+        Acceleration</a>
       <a href="codified-sales.html"
         style="padding:10px 10px;font-size:13px;font-weight:600;color:var(--navy);white-space:nowrap;border-bottom:2px solid var(--gold);">Codified
         Sales</a>
@@ -105,7 +113,9 @@
         <div class="callout-bar"></div>
         <div class="callout-body">
 
-          Saber Software was a Portland, OR-based technology company specializing in <strong> Commercial Off-the-Shelf
+          
+              <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">Context</div>
+              Saber Software was a Portland, OR-based technology company specializing in <strong> Commercial Off-the-Shelf
             (COTS) </strong> software deployment for the State and Local Government (S&LG) sector. Following significant
           growth and market success, the company was <strong>acquired by EDS in 2008</strong>.
 
@@ -125,7 +135,9 @@
           <div class="callout navy" style="margin:0;">
             <div class="callout-bar"></div>
             <div class="callout-body">
-              <strong>Proposition:</strong> Adopt a Rapid Application Development (RAD) methodology and build strategic
+              
+              <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">Proposition</div>
+              Adopt a Rapid Application Development (RAD) methodology and build strategic
               partnerships with local vendors to deliver a highly configurable COTS system, enabling rapid deployment
               across States with varying legislative and operational requirements.
             </div>
@@ -139,27 +151,27 @@
       <!-- HEADLINE METRICS -->
       <div
         style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:#F7F6F2;border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-top:28px;margin-bottom:8px;">
-        <div style="padding:14px 16px;text-align:center;border-right:1px solid var(--border);">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">10&times;</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            10&times;</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             Revenue Growth in 4 Years</div>
         </div>
-        <div style="padding:14px 16px;text-align:center;border-right:1px solid var(--border);">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">13</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            13</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             U.S. States Deployed</div>
         </div>
-        <div style="padding:14px 16px;text-align:center;border-right:1px solid var(--border);">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">#181</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            #181</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             Deloitte Tech Fast 500, 2007</div>
         </div>
-        <div style="padding:14px 16px;text-align:center;">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">12 Mo</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            12 Mo</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             MVP to Market</div>
         </div>
@@ -302,14 +314,20 @@
       </div>
 
       <!-- CLOSING CALLOUT -->
-      <div class="callout navy" style="margin-top:32px;">
+      <div class="callout green" style="margin-top:32px;">
         <div class="callout-bar"></div>
         <div class="callout-body">
-          The practice grew from $5.8M to $57.8M in four years — not through marketing spend, but through a
-          deliberate commercial strategy: the right legislative window, local partnerships that unlocked county trust,
-          a delivery methodology purpose-built for speed, and a scalable onboarding framework that made every new
-          state easier to win. The result was a market-defining product, recognition on Deloitte's Technology Fast
-          500, and an acquisition that validated the commercial thesis.
+          <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">
+            Outcomes</div>
+          <ul style="margin:0;padding-left:18px;line-height:1.7;">
+            <li>Captured a <strong>once-in-a-generation legislative window (HAVA)</strong> ahead of competitors</li>
+            <li>Scaled the practice <strong>10&times; ($5.8M &rarr; $57.8M)</strong> across <strong>13 U.S.
+                states</strong> with zero failed transitions</li>
+            <li>Replaced bespoke per-state delivery with a <strong>repeatable, enablement-led GTM engine</strong></li>
+            <li>Earned <strong>Deloitte Technology Fast 500</strong> recognition (#181, 2007)</li>
+            <li>Validated the commercial thesis through <strong>acquisition by Electronic Data Systems</strong> in
+              2008</li>
+          </ul>
         </div>
       </div>
 

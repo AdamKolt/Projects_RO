@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Monetization – Adam Kolt MBA</title>
   <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <style>
@@ -14,6 +14,14 @@
       border-bottom: none;
     }
   </style>
+  <style>
+    .metric-cell { position: relative; padding: 14px 16px; text-align: center; }
+    .metric-cell + .metric-cell::before {
+      content: ''; position: absolute; left: -1px; top: 12px; bottom: 12px;
+      border-left: 2px solid var(--border);
+    }
+  </style>
+
 </head>
 
 <body>
@@ -44,7 +52,7 @@
         Self-Service</a>
       <a href="L2C-Optimization.html"
         style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">L2C
-        Optimization</a>
+        Acceleration</a>
       <a href="codified-sales.html"
         style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">Codified
         Sales</a>
@@ -102,7 +110,9 @@
       <div class="callout gold" style="margin-top:20px;">
         <div class="callout-bar"></div>
         <div class="callout-body">
-          Ooredoo is a fast-paced multi-national corporation offering <strong>telecom, cloud, and ICT services</strong>
+          
+              <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">Context</div>
+              Ooredoo is a fast-paced multi-national corporation offering <strong>telecom, cloud, and ICT services</strong>
           in 13 countries with 100M subscribers. Ooredoo Qatar is the head office operating in adherence with strict
           national consumer data privacy laws.
         </div>
@@ -112,7 +122,9 @@
         <div class="callout red" style="margin:0;">
           <div class="callout-bar"></div>
           <div class="callout-body">
-            <strong>Problem:</strong> Ooredoo sits on a vast, untapped strategic asset in its consumer datasets.
+            
+              <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">Problem</div>
+              Ooredoo sits on a vast, untapped strategic asset in its consumer datasets.
             Meanwhile, SMBs were churning out of the Bulk SMS service due to a lack of customer data needed to run
             targeted campaigns &mdash; a missed revenue opportunity for Ooredoo on both sides.
           </div>
@@ -120,7 +132,9 @@
         <div class="callout navy" style="margin:0;">
           <div class="callout-bar"></div>
           <div class="callout-body">
-            <strong>Proposition:</strong> Unlock new revenue streams bridging both problems, by building a self-serve
+            
+              <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">Proposition</div>
+              Unlock new revenue streams bridging both problems, by building a self-serve
             <strong>Marketing Campaigns as a Service</strong> platform allowing SMBs to launch demographic and
             location-based SMS and WhatsApp campaigns, powered by Ooredoo's anonymized customer data without
             compromising subscriber privacy.
@@ -131,27 +145,27 @@
       <!-- HEADLINE METRICS -->
       <div
         style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:#F7F6F2;border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-top:28px;margin-bottom:8px;">
-        <div style="padding:14px 16px;text-align:center;border-right:1px solid var(--border);">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">$100K</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            $100K</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             35% Above 30-Day Forecast</div>
         </div>
-        <div style="padding:14px 16px;text-align:center;border-right:1px solid var(--border);">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">50+</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            50+</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             SMB Customers in First 30 Days</div>
         </div>
-        <div style="padding:14px 16px;text-align:center;border-right:1px solid var(--border);">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">MCaaS</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            MCaaS</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             First-of-Its-Kind at Ooredoo</div>
         </div>
-        <div style="padding:14px 16px;text-align:center;">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">Precedent</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            Precedent</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             For Compliant Data Monetization</div>
         </div>
@@ -343,14 +357,21 @@
         </div>
       </div>
       <!-- CLOSING CALLOUT -->
-      <div class="callout navy" style="margin-top:32px;">
+      <div class="callout green" style="margin-top:32px;">
         <div class="callout-bar"></div>
         <div class="callout-body">
-          The launch turned a dormant data asset into a productized, revenue-generating platform &mdash; while
-          establishing the regulatory, consent, and architectural precedent for every future data monetization
-          initiative at Ooredoo. A single product solved two commercial problems at once: SMB churn off Bulk SMS,
-          and the company&rsquo;s long-stalled ambition to monetize its subscriber data within strict national
-          privacy laws.
+          <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">
+            Outcomes</div>
+          <ul style="margin:0;padding-left:18px;line-height:1.7;">
+            <li>Launched the <strong>first data monetization product at Ooredoo</strong></li>
+            <li>Generated <strong>$100K in first-month revenue</strong>, 35% above forecast</li>
+            <li>Solved two commercial problems at once: <strong>SMB churn from Bulk SMS</strong> and the
+              company&rsquo;s long-stalled ambition to <strong>monetize dormant subscriber data</strong></li>
+            <li>Established the <strong>regulatory, consent, and architectural precedent</strong> for every future
+              data monetization initiative</li>
+            <li>Built a <strong>productized, scalable revenue engine</strong> from a previously dormant strategic
+              asset</li>
+          </ul>
         </div>
       </div>
 

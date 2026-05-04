@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Channel Development – Adam Kolt MBA</title>
   <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <style>
@@ -14,6 +14,14 @@
       border-bottom: none;
     }
   </style>
+  <style>
+    .metric-cell { position: relative; padding: 14px 16px; text-align: center; }
+    .metric-cell + .metric-cell::before {
+      content: ''; position: absolute; left: -1px; top: 12px; bottom: 12px;
+      border-left: 2px solid var(--border);
+    }
+  </style>
+
 </head>
 
 <body>
@@ -44,7 +52,7 @@
         Self-Service</a>
       <a href="L2C-Optimization.html"
         style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">L2C
-        Optimization</a>
+        Acceleration</a>
       <a href="codified-sales.html"
         style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">Codified
         Sales</a>
@@ -119,27 +127,27 @@
       <!-- HEADLINE METRICS -->
       <div
         style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:#F7F6F2;border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-top:20px;margin-bottom:24px;">
-        <div style="padding:14px 16px;text-align:center;border-right:1px solid var(--border);">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">+2%</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            +2%</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             Market Share Gain Year 1</div>
         </div>
-        <div style="padding:14px 16px;text-align:center;border-right:1px solid var(--border);">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">Zero CAC</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            Zero CAC</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             New Customers via Channel</div>
         </div>
-        <div style="padding:14px 16px;text-align:center;border-right:1px solid var(--border);">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">100+</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            100+</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             B2B Partners Onboarded</div>
         </div>
-        <div style="padding:14px 16px;text-align:center;">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">500K+</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            500K+</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             Subscriber Base Protected</div>
         </div>
@@ -150,7 +158,9 @@
       <div class="callout gold" style="margin-top:20px;">
         <div class="callout-bar"></div>
         <div class="callout-body">
-          Ooredoo Qatar is the incumbent telecom operator defending against the challenger Vodafone
+          
+              <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">Context</div>
+              Ooredoo Qatar is the incumbent telecom operator defending against the challenger Vodafone
           Qatar over market share in the mobile and fixed consumer segments.
         </div>
       </div>
@@ -158,7 +168,9 @@
       <div class="callout red">
         <div class="callout-bar"></div>
         <div class="callout-body">
-          <strong>Problem:</strong> As the incumbent operator, Ooredoo Qatar faced pressure of aggressive discounting
+          
+              <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">Problem</div>
+              As the incumbent operator, Ooredoo Qatar faced pressure of aggressive discounting
           in residential fixed broadband segment, resulting in declining market share in communities where tenants made
           connectivity decisions independently at move-in, without incentive to favor Ooredoo.
         </div>
@@ -167,8 +179,9 @@
       <div class="callout navy">
         <div class="callout-bar"></div>
         <div class="callout-body">
-          <strong>Proposition:</strong>
-          Partner with property managers to embed Ooredoo into the leasing process, design a tri-party framework that
+          
+              <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">Proposition</div>
+              Partner with property managers to embed Ooredoo into the leasing process, design a tri-party framework that
           gives landlords a revenue-generating tool, tenants an effortless move-in experience, and Ooredoo a zero-cost
           customer acquisition channel.
         </div>
@@ -273,27 +286,27 @@
       <!-- HEADLINE METRICS -->
       <div
         style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:#F7F6F2;border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-top:20px;margin-bottom:24px;">
-        <div style="padding:14px 16px;text-align:center;border-right:1px solid var(--border);">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">5</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            5</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             Partner Firms Recruited &amp; Enabled</div>
         </div>
-        <div style="padding:14px 16px;text-align:center;border-right:1px solid var(--border);">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">100+</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            100+</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             Frontline Agents Trained &amp; Equipped</div>
         </div>
-        <div style="padding:14px 16px;text-align:center;border-right:1px solid var(--border);">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">5% YoY</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            5% YoY</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             Revenue Growth, Saturated Market</div>
         </div>
-        <div style="padding:14px 16px;text-align:center;">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">104%</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            104%</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             NRR via Indirect Channel Retention</div>
         </div>
@@ -313,7 +326,9 @@
       <div class="callout navy">
         <div class="callout-bar"></div>
         <div class="callout-body">
-          <strong>Proposition:</strong> Recruit specialist boutique sales firms with established SOHO relationships,
+          
+              <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">Proposition</div>
+              Recruit specialist boutique sales firms with established SOHO relationships,
           equip them with the same enablement stack as direct reps, and design commercial terms that align partner
           incentives with Ooredoo's NRR and ARPA goals &mdash; not just acquisition volume.
         </div>
@@ -405,6 +420,23 @@
             proportional direct-sales headcount.</div>
         </div>
 
+      </div>
+
+      <!-- CLOSING CALLOUT -->
+      <div class="callout green" style="margin-top:32px;">
+        <div class="callout-bar"></div>
+        <div class="callout-body">
+          <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">
+            Outcomes</div>
+          <ul style="margin:0;padding-left:18px;line-height:1.7;">
+            <li>Acquired customers at <strong>near-zero CAC</strong> via embedded B2B2C distribution</li>
+            <li><strong>Protected the SMB base</strong> from aggressive challenger pricing</li>
+            <li>Scaled distribution into a previously <strong>uneconomical SOHO segment</strong></li>
+            <li>Sustained <strong>5% YoY growth</strong> and <strong>104% NRR</strong> in a saturated market</li>
+            <li>Built a <strong>partner-led acquisition + retention engine</strong> independent of direct-sales
+              headcount</li>
+          </ul>
+        </div>
       </div>
 
     </div>

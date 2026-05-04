@@ -226,6 +226,8 @@ a { text-decoration: none; color: inherit; }
 .callout.red  .callout-body { background: #FDF0EE; }
 .callout.teal .callout-bar  { background: var(--teal); }
 .callout.teal .callout-body { background: #EEF5F3; }
+.callout.green .callout-bar  { background: #5BA77A; }
+.callout.green .callout-body { background: #EEF6EF; }
 
 /* ── BULLET LIST ── */
 .bullet-list {

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Strategic Alliances – Adam Kolt MBA</title>
   <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <style>
@@ -14,6 +14,14 @@
       border-bottom: none;
     }
   </style>
+  <style>
+    .metric-cell { position: relative; padding: 14px 16px; text-align: center; }
+    .metric-cell + .metric-cell::before {
+      content: ''; position: absolute; left: -1px; top: 12px; bottom: 12px;
+      border-left: 2px solid var(--border);
+    }
+  </style>
+
 </head>
 
 <body>
@@ -44,7 +52,7 @@
         Self-Service</a>
       <a href="L2C-Optimization.html"
         style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">L2C
-        Optimization</a>
+        Acceleration</a>
       <a href="codified-sales.html"
         style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">Codified
         Sales</a>
@@ -101,7 +109,9 @@
       <div class="callout gold" style="margin-top:20px;">
         <div class="callout-bar"></div>
         <div class="callout-body">
-          The SMB telecom market in Qatar was approaching saturation, with price-driven competition compressing
+          
+              <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">Context</div>
+              The SMB telecom market in Qatar was approaching saturation, with price-driven competition compressing
           margins on core connectivity. Ooredoo needed a structural answer: more revenue per account, not more
           accounts at lower prices.
         </div>
@@ -110,7 +120,9 @@
       <div class="callout navy">
         <div class="callout-bar"></div>
         <div class="callout-body">
-          <strong>Proposition:</strong> Partner with hyperscalers and OEMs to co-sell productivity SaaS, cloud
+          
+              <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">Proposition</div>
+              Partner with hyperscalers and OEMs to co-sell productivity SaaS, cloud
           infrastructure, and managed security as branded Ooredoo offerings &mdash; turning the SMB telecom contract
           into a multi-product digital relationship.
         </div>
@@ -119,27 +131,27 @@
       <!-- HEADLINE METRICS -->
       <div
         style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:#F7F6F2;border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-top:28px;margin-bottom:8px;">
-        <div style="padding:14px 16px;text-align:center;border-right:1px solid var(--border);">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">2&times;</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            2&times;</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             M365 Seats / Two Years Running</div>
         </div>
-        <div style="padding:14px 16px;text-align:center;border-right:1px solid var(--border);">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">+5%</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            +5%</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             ARPA Lift via VAS Attach</div>
         </div>
-        <div style="padding:14px 16px;text-align:center;border-right:1px solid var(--border);">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">+4%</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            +4%</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             LTV Improvement</div>
         </div>
-        <div style="padding:14px 16px;text-align:center;">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1;">
-            <span style="color:var(--gold);">104%</span></div>
+        <div class="metric-cell">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            104%</div>
           <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
             NRR in Saturated Market</div>
         </div>
@@ -209,6 +221,22 @@
             &mdash; proving that channel partnerships could outpace pricing as a growth lever.</div>
         </div>
 
+      </div>
+
+      <!-- CLOSING CALLOUT -->
+      <div class="callout green" style="margin-top:32px;">
+        <div class="callout-bar"></div>
+        <div class="callout-body">
+          <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">
+            Outcomes</div>
+          <ul style="margin:0;padding-left:18px;line-height:1.7;">
+            <li>Diversified the SMB revenue mix from <strong>telecom-only to multi-vendor VAS portfolio</strong></li>
+            <li><strong>Doubled M365 seats two years running</strong> through a structured attach Sales Play</li>
+            <li>Lifted <strong>ARPA 5%</strong> and <strong>LTV 4%</strong> via VAS attach</li>
+            <li>Sustained <strong>NRR at 104%</strong> in a saturated, price-pressured market</li>
+            <li>Built a <strong>partnership-led growth engine</strong> that outpaced pricing as the primary lever</li>
+          </ul>
+        </div>
       </div>
 
     </div>
