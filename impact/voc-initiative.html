@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOC Initiative – Adam Kolt MBA</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .metric-cell {
+      position: relative;
+      padding: 14px 16px;
+      text-align: center;
+    }
+
+    .metric-cell+.metric-cell::before {
+      content: '';
+      position: absolute;
+      left: -1px;
+      top: 12px;
+      bottom: 12px;
+      border-left: 2px solid var(--border);
+    }
+
+    .voc-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      font-size: 13px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .voc-table th {
+      background: #F7F6F2;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      color: var(--navy);
+      text-align: left;
+      padding: 12px 16px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .voc-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+
+    .voc-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .bullet-item {
+      border-bottom: none;
+    }
+
+    .voc-table tr:hover {
+      background: #FAFAF8;
+    }
+
+    .voc-table .touchpoint {
+      font-weight: 600;
+      color: var(--navy);
+      width: 32%;
+    }
+
+    .voc-table .mode {
+      width: 36%;
+    }
+
+    .voc-table .frequency {
+      width: 32%;
+      color: var(--muted);
+      font-style: italic;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="header-logo">Adam Kolt <sup>MBA</sup></a>
+      <nav class="site-nav">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About Me</a>
+        <a href="../education.html">Education</a>
+        <a href="../competencies.html">Competencies</a>
+        <a href="digital-self-service.html" class="active">Case Studies</a>
+        <a href="../resume.html">Resume</a>
+      </nav>
+      <div class="header-actions">
+        <span class="header-phone">&#9990; 714-273-2300</span>
+        <a href="mailto:adam.r.kolt@gmail.com" class="btn-contact">Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROJECT NAV (matches other case studies; this case is not yet linked from others) -->
+    <div style="background:#ECECEA;border-bottom:1px solid var(--border);position:sticky;top:56px;z-index:99;">
+    <div style="margin:0 auto;padding:0 48px;display:flex;gap:0;justify-content:center;">
+      <a href="digital-self-service.html"
+        style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">Digital
+        Self-Service</a>
+      <a href="channel-partners.html"
+        style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">Channel
+        Partners</a>
+      <a href="revenue-enablement.html"
+        style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">Revenue
+        Enablement</a>
+      <a href="b2b-sales-academy.html"
+        style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">B2B
+        Sales Academy</a>
+      <a href="l2c-acceleration.html"
+        style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">L2C
+        Acceleration</a>
+      <a href="Strategic-Alliances.html"
+        style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">Co-Sell
+        Motions</a>
+      <a href="data-monetization.html"
+        style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">Data
+        Monetization</a>
+      <a href="embedded-onboarding.html"
+        style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">Embedded
+        Onboarding</a>
+      <a href="market-creation.html"
+        style="padding:10px 10px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;">Market
+        Creation</a>
+      <a href="voc-initiative.html"
+        style="padding:10px 10px;font-size:13px;font-weight:600;color:var(--navy);white-space:nowrap;border-bottom:2px solid var(--gold);">VOC
+        Initiative</a>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="content">
+
+      <div class="section-header">
+        <div class="section-icon"><img src="../images/VOC Icon.png" alt=""
+            style="width:100%;height:100%;object-fit:contain;"></div>
+        <div class="section-title">
+          <h2>VOC<span style="color:var(--muted);font-weight:300;margin:0 4px;">&mdash;</span> Listening as
+            a
+            Discipline</h2>
+          <div class="tags">
+            <span class="tag">10 Touch-Points</span>
+            <span class="tag">Closed-Loop Feedback</span>
+            <span class="tag">NPS / CSAT Framework</span>
+            <span class="tag">Customer-Driven Decisions</span>
+            <span class="tag">Cross-Functional Listening</span>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <p class="intro">
+        Designed and stood up Ooredoo&rsquo;s SMB integrated <strong>Voice of Customer (VOC)</strong> program
+        &mdash; instrumented on <strong>Qualtrics</strong> across <strong>10 customer touchpoints</strong> spanning
+        digital, retail, telemarketing, field sales, channel partners, and customer service, focusing on
+        <strong>quantitative metrics</strong> (NPS, CSAT, and CES) and governed through a <strong>closed-loop
+          discipline</strong> that tied every insight to a defined operational action. The program moved customer voice
+        from fragmented anecdote into a structured commercial input that shaped product, channel, and service decisions.
+      </p>
+
+      <!-- CONTEXT CALLOUT -->
+      <div class="callout gold" style="margin-top:20px;">
+        <div class="callout-bar"></div>
+        <div class="callout-body">
+          <div
+            style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">
+            Context</div>
+          Ooredoo SMB customers were spread across <strong>multiple acquisition channels and service
+            touchpoints</strong>,
+          but the company lacked a unified mechanism to listen systematically.
+        </div>
+      </div>
+
+
+
+      <!-- HEADLINE METRICS -->
+      <div
+        style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:#F7F6F2;border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-top:28px;margin-bottom:8px;">
+        <div class="metric-cell">
+          <div
+            style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            10</div>
+          <div
+            style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
+            Customer Touchpoints Instrumented</div>
+        </div>
+        <div class="metric-cell">
+          <div
+            style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            +14</div>
+          <div
+            style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
+            SMB NPS Lift Across Program</div>
+        </div>
+        <div class="metric-cell">
+          <div
+            style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            92%</div>
+          <div
+            style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
+            Detractor Loop Closed &lt; 48 Hours</div>
+        </div>
+        <div class="metric-cell">
+          <div
+            style="font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#3A4A5C;line-height:1;letter-spacing:-0.5px;">
+            22%</div>
+          <div
+            style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:6px;line-height:1.3;">
+            Average Survey Response Rate</div>
+        </div>
+      </div>
+
+
+      <!-- TOUCHPOINT TABLE SECTION -->
+      <h3
+        style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin-top:32px;margin-bottom:8px;">
+        Touchpoint &times; Survey Channel &times; Frequency</h3>
+      <p style="margin:0 0 16px 0;font-size:14px;line-height:1.6;color:var(--text);">
+        Each touchpoint was matched to the survey channel best suited to its <strong>moment in the customer
+          journey</strong> and the <strong>cognitive load the customer could absorb</strong> at that point. Real-time,
+        low-effort channels (in-app, SMS, IVR) were used at high-frequency touchpoints; more reflective channels (email,
+        partner-administered) were reserved for moments where the customer could engage more deeply. The frequency of
+        each was governed to <strong>prevent survey fatigue</strong> and ensure response quality stayed high.
+      </p>
+
+      <table class="voc-table">
+        <thead>
+          <tr>
+            <th>Touchpoint</th>
+            <th>Survey Channel</th>
+            <th>Frequency</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="touchpoint">Digital Self-Service Onboarding</td>
+            <td class="mode">In-app (post-completion CSAT)</td>
+            <td class="frequency">Real-time, every transaction</td>
+          </tr>
+          <tr>
+            <td class="touchpoint">First Bill</td>
+            <td class="mode">SMS (NPS)</td>
+            <td class="frequency">First billing cycle</td>
+          </tr>
+          <tr>
+            <td class="touchpoint">Field Sales Visit</td>
+            <td class="mode">Email (post-visit CES)</td>
+            <td class="frequency">Within 24 hours of visit</td>
+          </tr>
+          <tr>
+            <td class="touchpoint">Retail Shop Interaction</td>
+            <td class="mode">Tablet at shop exit (CSAT)</td>
+            <td class="frequency">Real-time, every shop visit</td>
+          </tr>
+          <tr>
+            <td class="touchpoint">Telemarketing Call</td>
+            <td class="mode">IVR post-call (CSAT)</td>
+            <td class="frequency">Real-time, every call</td>
+          </tr>
+          <tr>
+            <td class="touchpoint">Customer Service Ticket Resolution</td>
+            <td class="mode">Email (CES)</td>
+            <td class="frequency">Per ticket close</td>
+          </tr>
+          <tr>
+            <td class="touchpoint">Channel Partner Sales</td>
+            <td class="mode">Partner portal &amp; in-person (NPS)</td>
+            <td class="frequency">Quarterly</td>
+          </tr>
+          <tr>
+            <td class="touchpoint">Product Activation / Service Go-Live</td>
+            <td class="mode">SMS (CSAT)</td>
+            <td class="frequency">Within 7 days of activation</td>
+          </tr>
+          <tr>
+            <td class="touchpoint">Quarterly Relational Survey</td>
+            <td class="mode">Email (NPS + open-ended)</td>
+            <td class="frequency">Quarterly</td>
+          </tr>
+          <tr>
+            <td class="touchpoint">Renewal Event</td>
+            <td class="mode">Email + relationship review (NPS)</td>
+            <td class="frequency">At renewal</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- BULLETS: PROGRAM DESIGN -->
+      <h3
+        style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin-top:32px;margin-bottom:16px;">
+        Program Design</h3>
+
+      <div class="bullet-list">
+
+        <div class="bullet-item">
+          <div class="bullet-dot"></div>
+          <div><strong>Touchpoint Mapping &amp; Mode Selection:</strong> Started by mapping the
+            <strong>SMB customer journey end-to-end</strong> &mdash; every meaningful interaction across acquisition,
+            onboarding, service, expansion, and exit. Matched each touchpoint to a VOC mode based on
+            <strong>moment-of-journey</strong> (transactional vs. relational), <strong>cognitive load</strong> (a
+            customer in the middle of an outage can&rsquo;t absorb a 10-question NPS), and <strong>response
+              channel fit</strong> (SMS for high-volume real-time, email for more reflective input, in-person for
+            qualitative depth). The result was 14 touchpoints with <strong>fit-for-purpose modes</strong>, not a
+            one-size-fits-all survey blasted indiscriminately.
+          </div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-dot"></div>
+          <div><strong>Closed-Loop Feedback Discipline:</strong> Built the operating mechanism that turned VOC from a
+            measurement exercise into a customer-trust signal. Every detractor (NPS &lt;7) and dissatisfied responder
+            (CSAT &lt;3) triggered an <strong>automated case</strong> routed to the responsible function, with a
+            <strong>48-hour response SLA</strong>. Customers were called back &mdash; not surveyed again, but
+            <strong>contacted by a human</strong> who acknowledged the feedback and either fixed the issue or explained
+            what would happen next. Achieved <strong>92% closed-loop response within 48 hours</strong>; closure
+            measurably reduced churn on customers who had given negative feedback.
+          </div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-dot"></div>
+          <div><strong>Cross-Functional Governance &amp; Single Source of Truth:</strong> Built a unified
+            <strong>VOC dashboard</strong> consolidating signals from all 14 touchpoints into one governed view.
+            Established a <strong>weekly cross-functional review</strong> with Sales, Service, Product, Marketing, and
+            Operations &mdash; same data, same definitions, shared accountability. Customer voice stopped being
+            something each function interpreted privately and became a <strong>shared commercial input</strong> on which
+            decisions were made together.
+          </div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-dot"></div>
+          <div><strong>Anti-Fatigue Design:</strong> Capped survey frequency per customer at <strong>no more than two
+              touches per monthr</strong> for the same service, with cross-channel deduplication so a customer who took
+            an in-shop CSAT
+            wasn&rsquo;t also pulled into the relational survey that quarter. The discipline preserved
+            <strong>response rate quality</strong> (sustained ~22% average) and protected the customer experience
+            from being degraded by the feedback program itself.
+          </div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-dot"></div>
+          <div><strong>Frontline Listening Training:</strong> Trained sales reps, retail agents, and service staff on
+            <strong>active listening as a structured skill</strong> &mdash; how to surface unspoken concerns, how to
+            ask follow-up questions that produce signal rather than confirmation, how to capture qualitative input in a
+            structured way that fed the VOC system. Frontline staff stopped being passive collectors of survey data
+            and became active <strong>sources of customer insight</strong> in their own right.
+          </div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-dot"></div>
+          <div><strong>VOC-to-Action Pipeline:</strong> Every cross-functional review tied insights to a
+            <strong>specific decision or operational change</strong> &mdash; product roadmap adjustments, channel
+            redesigns, service-process refinements, training updates. Insights without owned actions were treated as
+            unfinished work. Over time, customer voice influenced <strong>product backlog prioritization, channel
+              conflict rules, retail staffing models, and service SLAs</strong>. VOC stopped being a report and started
+            being a steering input.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BEST PRACTICES SECTION -->
+      <h3
+        style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin-top:36px;margin-bottom:16px;">
+        Operating Disciplines</h3>
+
+      <div class="bullet-list">
+
+        <div class="bullet-item">
+          <div class="bullet-dot"></div>
+          <div><strong>Close the loop, or don&rsquo;t ask:</strong> Asking customers for feedback you can&rsquo;t or
+            won&rsquo;t act on is worse than not asking. The 48-hour closed-loop SLA was the foundation that made the
+            entire program credible to customers.
+          </div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-dot"></div>
+          <div><strong>Match the mode to the moment:</strong> A customer in flow (digital onboarding) needs a one-tap
+            CSAT; a churning customer needs an exit interview; a partner relationship needs a quarterly relational
+            survey. One-size-fits-all surveying produces low response and low signal.
+          </div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-dot"></div>
+          <div><strong>Cap survey frequency aggressively:</strong> Survey fatigue is the silent killer of VOC programs.
+            Two touches per quarter per customer was the ceiling that preserved response quality.
+          </div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-dot"></div>
+          <div><strong>Single source of truth:</strong> Customer voice fragments naturally across functions. Without a
+            governed unified dashboard with shared definitions, every function interprets the customer differently and
+            the organization makes decisions on partial views.
+          </div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-dot"></div>
+          <div><strong>Layer quantitative and qualitative:</strong> Metrics tell you <em>what</em>; conversations tell
+            you <em>why</em>. Either alone is insufficient. The most useful insights came from triangulating between
+            them.
+          </div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-dot"></div>
+          <div><strong>Tie every insight to an owned action:</strong> Insights without action become noise. Each
+            cross-functional review ended with named owners and dated commitments &mdash; or the insight was
+            deprioritized rather than left in limbo.
+          </div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-dot"></div>
+          <div><strong>Make leadership feel the customer:</strong> Dashboards are abstractions. Monthly leadership
+            ride-alongs, advisory board sessions, and in-person customer visits keep senior decision-makers
+            <strong>calibrated to the actual customer experience</strong>, not just its metrics representation.
+          </div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-dot"></div>
+          <div><strong>Train frontline as listeners, not collectors:</strong> The richest signal comes from people
+            already in front of customers. Train them to <em>hear</em>, not just to push surveys, and the qualitative
+            channel becomes a primary intelligence source.
+          </div>
+        </div>
+
+        <div class="bullet-item" style="border-bottom:none;">
+          <div class="bullet-dot"></div>
+          <div><strong>Anonymize where it improves honesty:</strong> Customers under-report negative feedback when they
+            think it&rsquo;s attributable. Strategic anonymization on relational surveys raised honesty;
+            transactional surveys stayed identified to enable closed-loop response.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CLOSING OUTCOMES CALLOUT -->
+      <div class="callout green" style="margin-top:32px;">
+        <div class="callout-bar"></div>
+        <div class="callout-body">
+          <div
+            style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">
+            Outcomes</div>
+          <ul style="margin:0;padding-left:20px;line-height:1.7;">
+            <li><strong>NPS lifted +14 points</strong> across the SMB segment over the program&rsquo;s first year,
+              driven by closed-loop response and operational changes informed by customer voice.</li>
+            <li><strong>92% of detractor feedback closed within 48 hours</strong> through the structured closed-loop
+              mechanism, measurably reducing churn among customers who had given negative feedback.</li>
+            <li><strong>Customer voice influenced product roadmap, channel conflict rules, retail staffing
+                models, and service SLAs</strong> &mdash; VOC moved from sentiment report to structured commercial
+              input shaping operational decisions.</li>
+            <li><strong>Cross-functional adoption</strong> across Sales, Service, Product, Marketing, and Operations
+              &mdash; all operating from the same unified VOC dashboard with shared definitions and shared
+              accountability.</li>
+            <li><strong>Frontline listening capability</strong> embedded across reps, retail agents, and service staff
+              &mdash; converting customer-facing roles into active intelligence sources, not just transactional
+              touchpoints.</li>
+            <li><strong>Sustained 22% average response rate</strong> through anti-fatigue design and disciplined
+              frequency capping &mdash; preserving signal quality as the program scaled.</li>
+          </ul>
+        </div>
+      </div>
+
+      <br>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer style="background:#fff;border-top:1px solid var(--border);padding:32px 48px;margin-top:48px;">
+    <div style="max-width:860px;margin:0 auto;text-align:center;font-size:13px;color:var(--muted);">
+      &copy; Adam Kolt MBA &middot; <a href="../index.html" style="color:var(--muted);">Home</a> &middot;
+      <a href="mailto:adam.r.kolt@gmail.com" style="color:var(--muted);">adam.r.kolt@gmail.com</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
